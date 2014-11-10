@@ -1,0 +1,71 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'com.getprobe.www'
+version = '0.0.1-SNAPSHOT'
+
+description = """waterfall"""
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+
+// * Build settings
+
+repositories {
+        
+     maven {  url "http://repo.maven.apache.org/maven2" }
+     mavenCentral()
+}
+
+dependencies {
+    compile group: 'io.vertx', name: 'vertx-core', version:'2.1.2'
+    compile group: 'io.vertx', name: 'vertx-platform', version:'2.1.2'
+    testCompile group: 'junit', name: 'junit', version:'3.8.1'
+}
+
+
+// * Init build dir
+// ** .create dir build>mods
+def buildHome = 'build/'
+def modsHome = buildHome+'mods/'
+def classHome = 'build/classes/main/'
+def resourcesHome = 'build/resources/main'
+def modsName = "$group~$description~$version"
+def zipName = "$description-$version"
+
+task createDirs {
+    def modsHomeDir = new File(modsHome);
+    def modsPackDir = new File(modsHome+modsName);
+    
+    modsHomeDir.mkdirs();
+    modsPackDir.mkdirs();
+}
+
+// * Compose
+// ** copy from build>classes>main>
+task copyClasses(type: Copy) {
+    dependsOn build
+
+    // Copy everything under classHome
+    from classHome
+    // Determine the destination directory later
+    into modsHome+modsName
+}
+
+task copyResources(type: Copy) {
+    dependsOn build
+
+    from resourcesHome
+    into modsHome+modsName
+}
+
+// ** Zip 
+task zip(type: Zip){
+    dependsOn copyClasses, copyResources
+
+    archiveName = zipName + '.zip'
+    destinationDir = new File(buildHome)
+    
+    from modsHome+modsName
+}

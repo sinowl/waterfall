@@ -1,0 +1,8 @@
+{
+  "main": "com.getprobe.www.scope.vertx.verticle.HttpVerticle",
+
+  "description":"Scope",
+  "licenses": ["private"],
+  "author": "Namuk Park",
+  "keywords": ["Virus"]
+}
