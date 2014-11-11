@@ -1,4 +1,4 @@
-package com.getprobe.www.scope.phase.process;
+package com.getprobe.www.waterfall.phase.process;
 
 public interface Process {
     

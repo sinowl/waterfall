@@ -1,4 +1,4 @@
-package com.getprobe.www.scope.phase;
+package com.getprobe.www.waterfall.phase;
 
 public interface MessageSender <T>{
     

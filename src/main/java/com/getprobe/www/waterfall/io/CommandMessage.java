@@ -1,4 +1,4 @@
-package com.getprobe.www.scope.io;
+package com.getprobe.www.waterfall.io;
 
 import org.vertx.java.core.json.JsonObject;
 

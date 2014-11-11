@@ -1,4 +1,4 @@
-package com.getprobe.www.scope.util;
+package com.getprobe.www.waterfall.util;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;

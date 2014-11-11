@@ -1,4 +1,4 @@
-package com.getprobe.www.scope.vertx;
+package com.getprobe.www.waterfall.vertx;
 
 public enum JsonConfigElements {
     ;

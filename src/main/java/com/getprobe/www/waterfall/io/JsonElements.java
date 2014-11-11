@@ -1,4 +1,4 @@
-package com.getprobe.www.scope.io;
+package com.getprobe.www.waterfall.io;
 
 public enum JsonElements {
     TYPE;

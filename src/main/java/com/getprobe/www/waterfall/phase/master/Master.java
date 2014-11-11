@@ -1,13 +1,13 @@
-package com.getprobe.www.scope.phase.master;
+package com.getprobe.www.waterfall.phase.master;
 
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-import com.getprobe.www.scope.io.CommandMessage;
-import com.getprobe.www.scope.phase.MessageSender;
-import com.getprobe.www.scope.util.KeyGenerator;
+import com.getprobe.www.waterfall.io.CommandMessage;
+import com.getprobe.www.waterfall.phase.MessageSender;
+import com.getprobe.www.waterfall.util.KeyGenerator;
 
 public class Master implements MasterInterface{
     private final String PREFIX_WORKER_ADDRESS = "scope.worker.";

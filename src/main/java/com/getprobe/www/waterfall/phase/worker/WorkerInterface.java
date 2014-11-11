@@ -1,8 +1,8 @@
-package com.getprobe.www.scope.phase.worker;
+package com.getprobe.www.waterfall.phase.worker;
 
-import com.getprobe.www.scope.io.CommandMessage;
-import com.getprobe.www.scope.io.ResultMessage;
-import com.getprobe.www.scope.phase.process.Process;
+import com.getprobe.www.waterfall.io.CommandMessage;
+import com.getprobe.www.waterfall.io.ResultMessage;
+import com.getprobe.www.waterfall.phase.process.Process;
 
 public interface WorkerInterface {
     

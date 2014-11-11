@@ -1,4 +1,4 @@
-package com.getprobe.www.scope.vertx.verticle;
+package com.getprobe.www.waterfall.vertx.verticle;
 
 import java.io.BufferedReader;
 import java.io.File;

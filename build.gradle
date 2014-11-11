@@ -69,3 +69,6 @@ task zip(type: Zip){
     
     from modsHome+modsName
 }
+
+//IDE Settings
+// intellij idea setting

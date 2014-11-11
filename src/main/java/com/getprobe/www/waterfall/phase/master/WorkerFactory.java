@@ -1,4 +1,4 @@
-package com.getprobe.www.scope.phase.master;
+package com.getprobe.www.waterfall.phase.master;
 
 public interface WorkerFactory {
     

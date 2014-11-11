@@ -1,9 +1,9 @@
-package com.getprobe.www.scope.phase.master;
+package com.getprobe.www.waterfall.phase.master;
 
 import java.util.Map;
 import java.util.Set;
 
-import com.getprobe.www.scope.io.CommandMessage;
+import com.getprobe.www.waterfall.io.CommandMessage;
 
 public interface MasterInterface{
     

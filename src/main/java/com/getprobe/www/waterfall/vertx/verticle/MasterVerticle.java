@@ -1,4 +1,4 @@
-package com.getprobe.www.scope.vertx.verticle;
+package com.getprobe.www.waterfall.vertx.verticle;
 
 import org.vertx.java.core.Handler;
 import org.vertx.java.core.eventbus.EventBus;
@@ -6,12 +6,12 @@ import org.vertx.java.core.eventbus.Message;
 import org.vertx.java.core.json.JsonObject;
 import org.vertx.java.platform.Verticle;
 
-import com.getprobe.www.scope.io.CommandMessage;
-import com.getprobe.www.scope.phase.master.Master;
-import com.getprobe.www.scope.phase.master.WorkerFactory;
-import com.getprobe.www.scope.util.JsonMessageElements;
-import com.getprobe.www.scope.vertx.JsonConfigElements;
-import com.getprobe.www.scope.vertx.MessageSenderVertx;
+import com.getprobe.www.waterfall.io.CommandMessage;
+import com.getprobe.www.waterfall.phase.master.Master;
+import com.getprobe.www.waterfall.phase.master.WorkerFactory;
+import com.getprobe.www.waterfall.util.JsonMessageElements;
+import com.getprobe.www.waterfall.vertx.JsonConfigElements;
+import com.getprobe.www.waterfall.vertx.MessageSenderVertx;
 
 public class MasterVerticle extends Verticle{
 //    private final String PREFIX_MASTER_ADDRESS = "scope.master.";

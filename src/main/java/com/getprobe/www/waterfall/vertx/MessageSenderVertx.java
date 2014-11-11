@@ -1,10 +1,10 @@
-package com.getprobe.www.scope.vertx;
+package com.getprobe.www.waterfall.vertx;
 
 import org.vertx.java.core.eventbus.EventBus;
 import org.vertx.java.core.json.JsonObject;
 
-import com.getprobe.www.scope.phase.MessageSender;
-import com.getprobe.www.scope.io.Message;
+import com.getprobe.www.waterfall.phase.MessageSender;
+import com.getprobe.www.waterfall.io.Message;
 
 public class MessageSenderVertx <T extends Message> implements MessageSender<T> {
     private EventBus eventBus;

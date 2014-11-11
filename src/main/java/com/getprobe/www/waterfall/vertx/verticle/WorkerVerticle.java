@@ -1,4 +1,4 @@
-package com.getprobe.www.scope.vertx.verticle;
+package com.getprobe.www.waterfall.vertx.verticle;
 
 import java.io.IOException;
 import java.util.ArrayDeque;
@@ -10,11 +10,11 @@ import org.vertx.java.core.eventbus.Message;
 import org.vertx.java.core.json.JsonObject;
 import org.vertx.java.platform.Verticle;
 
-import com.getprobe.www.scope.io.JsonElements;
-import com.getprobe.www.scope.io.JsonParsor;
-import com.getprobe.www.scope.io.ResultMessage;
-import com.getprobe.www.scope.phase.worker.Worker;
-import com.getprobe.www.scope.vertx.JsonConfigElements;
+import com.getprobe.www.waterfall.phase.worker.Worker;
+import com.getprobe.www.waterfall.io.JsonElements;
+import com.getprobe.www.waterfall.io.JsonParsor;
+import com.getprobe.www.waterfall.io.ResultMessage;
+import com.getprobe.www.waterfall.vertx.JsonConfigElements;
 
 public class WorkerVerticle extends Verticle{
     

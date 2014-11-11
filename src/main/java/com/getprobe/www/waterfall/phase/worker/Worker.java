@@ -1,12 +1,12 @@
-package com.getprobe.www.scope.phase.worker;
+package com.getprobe.www.waterfall.phase.worker;
 
 import java.io.IOException;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
-import com.getprobe.www.scope.io.CommandMessage;
-import com.getprobe.www.scope.io.ResultMessage;
-import com.getprobe.www.scope.phase.process.Process;
+import com.getprobe.www.waterfall.io.CommandMessage;
+import com.getprobe.www.waterfall.io.ResultMessage;
+import com.getprobe.www.waterfall.phase.process.Process;
 
 public class Worker implements WorkerInterface{
     private static final String SURFIX_PROCESS_CLASS = "Process";

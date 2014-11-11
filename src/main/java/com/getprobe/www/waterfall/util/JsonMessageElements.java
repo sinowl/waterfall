@@ -1,4 +1,4 @@
-package com.getprobe.www.scope.util;
+package com.getprobe.www.waterfall.util;
 
 public enum JsonMessageElements {
     STARTING_ADDRESS, DESTINATION_ADDRESS, COMMAND;
